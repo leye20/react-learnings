@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Button, Message, Form, Segment } from 'semantic-ui-react';
+import { Button, Message, Form, Segment, Icon } from 'semantic-ui-react';
 import './App.css';
+import PlaceholderExampleCard from './placeholder';
 
 function App() {
   return (
@@ -21,11 +22,11 @@ function App() {
           Learn React
         </a>
         <Button size="small" color="green">
-          <icon name="download"/>
+          <Icon name="download"/>
           Download
         </Button>
         <Message icon>
-        <icon name="circle notched" loading />
+        <Icon name="circle notched" loading />
           <Message.Content>
           <Message.Header>Just one second</Message.Header>
             We're fetching that content for you. Please be patient!
@@ -42,6 +43,7 @@ function App() {
     </Form>
     </Segment>
       </header>
+    <PlaceholderExampleCard />
     </div>
   );
 }
